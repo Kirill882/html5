@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>homework6a</title>
+
+</head>
+
+<body>
+<style>
+/* Общий стиль для страницы */
+div{
+   margin:0 0 10px 0;
+   font-family:sans-serif;
+   width:100%;
+   clear:both;
+}
+/* Стиль для 1-го способа */
+div.firsta table tr td a:visited{
+    color: green;
+}
+ div.firsta td{
+border-right: solid red 2px;
+padding-right: 4px;
+}
+div.firsta table tr td:last-child{
+    border-right:none;
+}
+/* Стиль для 2-го способа */
+div.seconda{;
+padding-bottom: 15px;
+clear: both;
+}
+div.seconda a{
+border-right:solid red 2px;
+float: left;
+padding-left:8px;
+padding-right:8px;
+}
+div.seconda a:last-child{
+border-right:none;
+
+}
+div.seconda a:visited{
+    color: green;
+}
+/* Cтиль для 3-го способа */
+div.thirda{
+margin-top: 15px;
+}
+div.thirda a:visited{
+color: green;
+}
+div.thirda a::after{
+content: '|'; 
+color:red;
+font-weight: 700;
+padding-left:8px;
+}
+</style>
+
+<div class="firsta">
+    <table>
+        <tr>
+            <td><a href="">первая ссылка</a></td> 
+            <td><a href="">вторая ссылка</a></td> 
+            <td><a href="">третья ссылка</a></td>
+            <td><a href="">четвертая ссылка</a></td>
+            <td><a href="">пятая ссылка</a></td>
+        </tr>
+    </table>
+</div>
+<div class="seconda">
+    <a href="">первая ссылка</a> <a href="">вторая ссылка</a> <a href="">третья ссылка</a> <a href="">четвертая ссылка</a> <a href="">пятая ссылка</a>
+</div>
+<div class="thirda">
+    <a href="">первая ссылка</a> <a href="">вторая ссылка</a> <a href="">третья ссылка</a> <a href="">четвертая ссылка</a> <a href="">пятая ссылка</a>
+</div>
+</body>
+
+</html>
